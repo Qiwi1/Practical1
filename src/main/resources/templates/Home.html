@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Getting Started: Serving Web Content</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <p th:text="'Эта типа калькулятор'" />
+
+    <h3>post</h3>
+    <form method="post" action="/res">
+        <i><p>Введите a:<input id="variable" name="variable" type="text"> <p/></i>
+        <i><p>Введите b:<input id="variable2" name="variable2" type="text"> <p/></i>
+      <br/>
+
+      <button name="Do" value="+">+</button>
+      <button name="Do" value="-">-</button>
+      <button name="Do" value="*">*</button>
+      <button name="Do" value="/">/</button>
+    </form>
+    <br/>
+
+    <h3>get</h3>
+    <form method="get" action="/getres">
+         <i><p>Введите a:<input id="getvariable" name="getvariable" type="text"></p></i>
+         <i><p>Введите b:<input id="getvariable2" name="getvariable2" type="text"></p></i>
+      <br/>
+
+      <button name="getDo" value="+">+</button>
+      <button name="getDo" value="-">-</button>
+      <button name="getDo" value="*">*</button>
+      <button name="getDo" value="/">/</button>
+    </form>
+
+</body>
+</html>
